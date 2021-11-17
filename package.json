@@ -1,0 +1,15 @@
+{
+  "name": "moddable-ts-boilerplate",
+  "version": "1.0.0",
+  "author": "dambusm",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "0.13.14",
+    "moddable": "https://github.com/Moddable-OpenSource/moddable",
+    "prettier": "2.4.1"
+  },
+  "scripts": {
+    "build": "esbuild src/main.ts --outfile=build/main.js && cp src/manifest.json build/manifest.json",
+    "deploy": "yarn build && cd ./build && mcconfig -d -m -p esp32"
+  }
+}

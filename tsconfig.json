@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "outDir": "./build",
+    "allowJs": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "lib": ["esnext"],
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src", "node_modules/moddable"]
+}
